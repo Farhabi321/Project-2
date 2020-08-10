@@ -23,7 +23,11 @@ body {
 }
 .text-lvl-tertiary {
 }
-.text-lvl-quarternary {
+.text-lvl-quaternary {
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: capitalize;
 }
 .text-lvl-quinary {
 }
@@ -32,6 +36,10 @@ body {
 .para {
   font-size: 15px;
 }
+.para-custom {
+  font-size: 14px;
+}
+
 /* *------------------------------- !SECTION TYPOGRAPHY ENDS ------------------------------- */
 
 /* !----------------------- SECTION REUSEABLE BLOCK STARTS ---------------------- */
@@ -70,7 +78,7 @@ body {
       rgba(5, 1, 7, 0.7),
       rgba(14, 7, 17, 0.7)
     ),
-    url("images/background.jpg");
+    url("./images/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -120,3 +128,22 @@ body {
   padding-bottom: 55px;
 }
 /* *----------------------- !SECTION SECTION HERO STARTS ---------------------- */
+
+
+/* !-------------------- SECTION SECTION PORTFOLIO STARTS -------------------- */
+
+.section-portfolio__body-container {
+  padding: 100px 0;
+}
+.section-portfolio__icon-item::before  {
+  color: var(--main-color);
+  font-size: 25px;
+  padding: 25px;
+  margin-left: 0;
+  border: 1px solid #F8F8F8;
+  border-radius: 50%;
+}
+
+
+
+/* *-------------------- !SECTION SECTION PORTFOLIO STARTS -------------------- */
