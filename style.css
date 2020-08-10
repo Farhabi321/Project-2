@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+/* !------------------------------- SECTION CSS VARIABLES STARTS------------------------------ */
+:root {
+  --main-color: #eb233c;
+  --secondary-color: #faf4fa;
+  --tertiary-color: #ffffff;
+  --secondary-font: "Oleo Script Swash Caps", sans-serif;
+}
+/* *------------------------------- !SECTION CSS VARIABLES ENDS---------------------------- */
+
+/* !------------------------------- SECTION TYPOGRAPHY STARTS ------------------------------- */
+.text-lvl-primary {
+  font-family: var(--secondary-font);
+  font-size: 50px;
+  text-transform: capitalize;
+}
+.text-lvl-secondary {
+}
+.text-lvl-tertiary {
+}
+.text-lvl-quarternary {
+}
+.text-lvl-quinary {
+}
+.text-lvl-senary {
+}
+.para {
+  font-size: 15px;
+}
+/* *------------------------------- !SECTION TYPOGRAPHY ENDS ------------------------------- */
+
+/* !----------------------- SECTION REUSEABLE BLOCK STARTS ---------------------- */
+.text-red {
+  color: var(--main-color);
+}
+.button {
+  display: inline-block;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--tertiary-color);
+  border: 1px solid #4b3e40;
+  border-radius: 25px;
+}
+.button-transparent {
+  text-decoration: none;
+  padding: 12px 35px;
+}
+.button-transparent:hover {
+  text-decoration: none;
+  color: #000000;
+  background: #cccccc;
+}
+}
+.button-red {
+}
+.button-submit {
+}
+/* *----------------------- !SECTION REUSEABLE BLOCK STARTS ---------------------- */
+
+/* !----------------------- SECTION SECTION HERO STARTS ---------------------- */
+.section-hero {
+  background-image: linear-gradient(
+      to right,
+      rgba(5, 1, 7, 0.7),
+      rgba(14, 7, 17, 0.7)
+    ),
+    url("images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.section-hero__main-menu {
+  background: #443344;
+}
+.navbar {
+  padding: 0.1rem 1rem;
+}
+.nav-custom {
+  background: transparent !important;
+}
+.custom-brand {
+  font-family: var(--secondary-font);
+  font-size: 26px;
+  text-transform: capitalize;
+}
+.custom-brand:hover {
+  color: var(--main-color) !important;
+}
+
+.nav-item-custom {
+  text-transform: capitalize;
+  padding: 0.2rem 0;
+  border-bottom: 2px solid transparent;
+}
+.active {
+  border-bottom: 2px solid var(--main-color);
+}
+.nav-item-custom:hover {
+  background: #665566;
+  border-bottom: 2px solid var(--main-color);
+}
+.nav-link {
+  padding: 0.6rem 0.6rem !important;
+}
+.nav-link-custom {
+  font-size: 14px !important;
+}
+.section-hero__body-container {
+  padding-top: 300px;
+  padding-bottom: 200px;
+}
+.section-hero__text-container {
+  padding-bottom: 55px;
+}
+/* *----------------------- !SECTION SECTION HERO STARTS ---------------------- */
