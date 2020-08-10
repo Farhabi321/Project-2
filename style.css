@@ -20,6 +20,10 @@ body {
   text-transform: capitalize;
 }
 .text-lvl-secondary {
+  display: inline-block;
+  font-family: var(--secondary-font);
+  font-size: 24px;
+  text-transform: capitalize;
 }
 .text-lvl-tertiary {
 }
@@ -55,19 +59,33 @@ body {
   border: 1px solid #4b3e40;
   border-radius: 25px;
 }
-.button-transparent {
+.button:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.button--transparent {
   text-decoration: none;
   padding: 12px 35px;
 }
-.button-transparent:hover {
+.button--transparent:hover {
   text-decoration: none;
   color: #000000;
   background: #cccccc;
 }
+.button--red {
+  text-decoration: none;
+  border: none;
+  padding: 12px 35px;
+  color: #FFFFFF;
+  background: var(--main-color); 
 }
-.button-red {
 }
-.button-submit {
+.button--red:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+  background: var(--main-color); 
+}
+.button--submit {
 }
 /* *----------------------- !SECTION REUSEABLE BLOCK STARTS ---------------------- */
 
@@ -129,21 +147,37 @@ body {
 }
 /* *----------------------- !SECTION SECTION HERO STARTS ---------------------- */
 
-
 /* !-------------------- SECTION SECTION PORTFOLIO STARTS -------------------- */
 
 .section-portfolio__body-container {
   padding: 100px 0;
 }
-.section-portfolio__icon-item::before  {
+.section-portfolio__icon-item::before {
   color: var(--main-color);
   font-size: 25px;
   padding: 25px;
   margin-left: 0;
-  border: 1px solid #F8F8F8;
+  border: 1px solid #f8f8f8;
   border-radius: 50%;
 }
-
-
-
 /* *-------------------- !SECTION SECTION PORTFOLIO STARTS -------------------- */
+
+/* !----------------------- SECTION SECTION WORK STARTS ---------------------- */
+
+.section-work {
+  background: var(--secondary-color);
+}
+.section-header__main-container {
+  padding: 30px 0;
+}
+.section-header__main-title {
+  border-bottom: 2px solid var(--main-color);
+}
+.section-work__body-container {
+  padding: 20px 0;
+}
+.section-work__button-container {
+  padding: 45px 0;
+}
+
+/* *----------------------- !SECTION SECTION WORK ENDS ---------------------- */
