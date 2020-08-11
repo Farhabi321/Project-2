@@ -158,6 +158,7 @@ body {
 }
 .active {
   border-bottom: 2px solid var(--main-color);
+  background: #665566;
 }
 .nav-item-custom:hover {
   background: #665566;
@@ -178,20 +179,33 @@ body {
 }
 /* *----------------------- !SECTION SECTION HERO STARTS ---------------------- */
 
-/* !-------------------- SECTION SECTION PORTFOLIO STARTS -------------------- */
+/* !-------------------- SECTION SECTION SERVICES STARTS -------------------- */
 
 .section-services__body-container {
   padding: 100px 0;
 }
-.section-services__icon-item::before {
+.section-services__icon-container {
+  width: 65px;
+  height: 65px;
+  border-radius: 40px;
+  border: 1px solid #f8f8f8;
+}
+.section-services__icon-item {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--main-color);
+  line-height: 65px;
+}
+
+/* .section-services__icon-item::before {
   color: var(--main-color);
   font-size: 25px;
   padding: 25px;
   margin-left: 0;
   border: 1px solid #f8f8f8;
   border-radius: 50%;
-}
-/* *-------------------- !SECTION SECTION PORTFOLIO STARTS -------------------- */
+} */
+/* *-------------------- !SECTION SECTION SERVICES STARTS -------------------- */
 
 /* !----------------------- SECTION SECTION WORK STARTS ---------------------- */
 
@@ -202,7 +216,7 @@ body {
   padding: 20px 0;
 }
 .section-work__button-container {
-  padding: 45px 0;
+  padding-bottom: 30px;
 }
 .section-work__img-container {
   position: relative;
@@ -314,7 +328,7 @@ body {
   display: inline-block;
   width: 40px;
   height: 40px;
-  border-radius: 20px;
+  border-radius: 40px;
   font-size: 20px;
   background: #222222;
   margin-right: 8px;
@@ -343,6 +357,42 @@ body {
 
 /* *---------------------- SECTION SECTION FOOTER ENDS --------------------- */
 
+
+
+/* !----------------------- SECTION MEDIA QUERY STARTS ----------------------- */
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 600px) {
+  .text-lvl-primary {
+  font-size: 35px;
+}
+.section-contact__address-container {
+  margin-top: 70px;
+}
+.section-contact__body-container {
+  padding-top: 60px;
+}
+}
+
+/* Medium devices (tablets, less than 992px) */
+
+@media (max-width: 767.98px) {
+  .section-contact__body-container {
+    padding-top: 60px;
+  }
+  .section-contact__address-container {
+    margin-top: 70px;
+  }
+}
+
+
+
+
+
+
+/* *----------------------- SECTION MEDIA QUERY ENDS ----------------------- */
 
 
 
