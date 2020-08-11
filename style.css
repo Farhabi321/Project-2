@@ -66,6 +66,7 @@ body {
   color: var(--tertiary-color);
   border: 1px solid #4b3e40;
   border-radius: 25px;
+  transition: all 0.3s ease;
 }
 .button:hover {
   text-decoration: none;
@@ -110,10 +111,11 @@ body {
   padding: 0;
 }
  /* !SECTION Section header starts */
-
-
-
+ 
 /* *----------------------- !SECTION REUSEABLE BLOCK STARTS ---------------------- */
+
+
+
 
 /* !----------------------- SECTION SECTION HERO STARTS ---------------------- */
 .section-hero {
@@ -141,6 +143,7 @@ body {
   font-family: var(--secondary-font);
   font-size: 26px;
   text-transform: capitalize;
+  transition: all 0.3s ease;
 }
 .custom-brand:hover {
   color: var(--main-color) !important;
@@ -150,6 +153,7 @@ body {
   text-transform: capitalize;
   padding: 0.2rem 0;
   border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
 }
 .active {
   border-bottom: 2px solid var(--main-color);
@@ -175,10 +179,10 @@ body {
 
 /* !-------------------- SECTION SECTION PORTFOLIO STARTS -------------------- */
 
-.section-portfolio__body-container {
+.section-services__body-container {
   padding: 100px 0;
 }
-.section-portfolio__icon-item::before {
+.section-services__icon-item::before {
   color: var(--main-color);
   font-size: 25px;
   padding: 25px;
@@ -199,7 +203,22 @@ body {
 .section-work__button-container {
   padding: 45px 0;
 }
-
+.section-work__img-container {
+  position: relative;
+}
+.section-work__inner-container {
+  background: #D8C7BF;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.section-work__img-container:hover .section-work__inner-container {
+  opacity: 0.3;
+}
 /* *----------------------- !SECTION SECTION WORK ENDS ---------------------- */
 
 
@@ -269,14 +288,16 @@ body {
   font-size: 16px;
   font-weight: 500;
 }
-.section-contact__link-container,
+.section-contact__email-container,
 .section-contact__number-container {
   font-size: 14px;
 }
 .section-contact__icon-item::before {
+  font-size: 14px;
   color: var(--main-color);
   margin-left: 0px;
   margin-top: 0px;
+  margin-right: 7px;
 }
 /* *-------------------- SECTION SECTION CONTACT US ENDS ------------------- */
 
@@ -284,24 +305,24 @@ body {
 
 /* !---------------------- SECTION SECTION FOOTER STARTS --------------------- */
 .section-footer {
-  padding: 30px 0;;
+  padding-top: 35px;
+  padding-bottom: 25px;
+}
+.list-items {
+  display: inline-block;
 }
 .custom-icon::before {
-  background: #000000;
+  background: #222222;
   color: #FFFFFF;
   border-radius: 50%;
-  font-size: 20px;
-  padding: 15px;
+  font-size: 18px;
+  padding: 10px 10px;
   margin-left: 0;
+  margin-right: 10px;
 }
-.custom-icon::before:hover {
+.list-links:hover .custom-icon::before {
   background: var(--main-color);
   color: #FFFFFF;
-  border-radius: 50%;
-  font-size: 15px;
-  padding: 15px;
-  margin-left: 0;
-}
 
 
 /* *---------------------- SECTION SECTION FOOTER ENDS --------------------- */

@@ -29,7 +29,10 @@
     <!-- Flaticon Stylesheet  -->
     <link rel="stylesheet" href="font/flaticon.min.css" />
 
-    <!-- MAin StyleSheet -->
+    <!-- Font-awesome Stylesheet -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+    <!-- Main StyleSheet -->
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -47,23 +50,25 @@
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <ul class="navbar-nav ml-auto text-white">
-              <li class="nav-item nav-item-custom active">
-                <a href="#" class="nav-link nav-link-custom">home</a>
-              </li>
-              <li class="nav-item nav-item-custom">
-                <a href="#" class="nav-link nav-link-custom">work</a>
-              </li>
-              <li class="nav-item nav-item-custom">
-                <a href="#" class="nav-link nav-link-custom">testimonial</a>
-              </li>
-              <li class="nav-item nav-item-custom">
-                <a href="#" class="nav-link nav-link-custom">about</a>
-              </li>
-              <li class="nav-item nav-item-custom">
-                <a href="#" class="nav-link nav-link-custom">contact us</a>
-              </li>
-            </ul>
+            <div id="nav" class="collapse navbar-collapse">
+              <ul class="navbar-nav ml-auto text-white">
+                <li class="nav-item nav-item-custom active">
+                  <a href="#" class="nav-link nav-link-custom">home</a>
+                </li>
+                <li class="nav-item nav-item-custom">
+                  <a href="#" class="nav-link nav-link-custom">work</a>
+                </li>
+                <li class="nav-item nav-item-custom">
+                  <a href="#" class="nav-link nav-link-custom">testimonial</a>
+                </li>
+                <li class="nav-item nav-item-custom">
+                  <a href="#" class="nav-link nav-link-custom">about</a>
+                </li>
+                <li class="nav-item nav-item-custom">
+                  <a href="#" class="nav-link nav-link-custom">contact us</a>
+                </li>
+              </ul>
+            </div>
           </nav>
           <!-- Nav ends -->
         </div>
@@ -89,27 +94,27 @@
     </section>
     <!-- * !SECTION SECTION HERO ENDS -->
 
-    <!-- ! SECTION PORTFOLIO STARTS -->
-    <section class="section-portfolio">
-      <div class="section-portfolio__body-container">
+    <!-- ! SECTION SECTION SERVICES STARTS -->
+    <section class="section-services">
+      <div class="section-services__body-container">
         <div class="container">
           <div class="row">
             <!-- Card-1 Starts -->
             <div class="col-md-4">
               <div class="row">
                 <div class="col-md-2">
-                  <div class="section-portfolio__icon-container mr-5">
-                    <i class="flaticon-idea section-portfolio__icon-item"></i>
+                  <div class="section-services__icon-container mr-5">
+                    <i class="flaticon-idea section-services__icon-item"></i>
                   </div>
                 </div>
                 <div class="col-md-10">
                   <div class="section-hero__inner-container ml-4">
-                    <div class="section-portfolio__title-container">
+                    <div class="section-services__title-container">
                       <h4 class="text-lvl-quaternary">
                         elementum laoreet
                       </h4>
                     </div>
-                    <div class="section-portfolio__text-container">
+                    <div class="section-services__text-container">
                       <p class="para-custom">
                         Cras aliquet et mi id fermentum. Suspendisse eget
                         sodales lorem, vestibulum euismod lectus.
@@ -125,20 +130,20 @@
             <div class="col-md-4">
               <div class="row">
                 <div class="col-md-2">
-                  <div class="section-portfolio__icon-container mr-5">
+                  <div class="section-services__icon-container mr-5">
                     <i
-                      class="flaticon-visibility section-portfolio__icon-item"
+                      class="flaticon-visibility section-services__icon-item"
                     ></i>
                   </div>
                 </div>
                 <div class="col-md-10">
                   <div class="section-hero__inner-container ml-4">
-                    <div class="section-portfolio__title-container">
+                    <div class="section-services__title-container">
                       <h4 class="text-lvl-quaternary">
                         elementum laoreet
                       </h4>
                     </div>
-                    <div class="section-portfolio__text-container">
+                    <div class="section-services__text-container">
                       <p class="para-custom">
                         Cras aliquet et mi id fermentum. Suspendisse eget
                         sodales lorem, vestibulum euismod lectus.
@@ -154,18 +159,18 @@
             <div class="col-md-4">
               <div class="row">
                 <div class="col-md-2">
-                  <div class="section-portfolio__icon-container mr-5">
-                    <i class="flaticon-heart section-portfolio__icon-item"></i>
+                  <div class="section-services__icon-container mr-5">
+                    <i class="flaticon-heart section-services__icon-item"></i>
                   </div>
                 </div>
                 <div class="col-md-10">
                   <div class="section-hero__inner-container ml-4">
-                    <div class="section-portfolio__title-container">
+                    <div class="section-services__title-container">
                       <h4 class="text-lvl-quaternary">
                         elementum laoreet
                       </h4>
                     </div>
-                    <div class="section-portfolio__text-container">
+                    <div class="section-services__text-container">
                       <p class="para-custom">
                         Cras aliquet et mi id fermentum. Suspendisse eget
                         sodales lorem, vestibulum euismod lectus.
@@ -180,7 +185,7 @@
         </div>
       </div>
     </section>
-    <!-- * !SECTION PORTFOLIO ENDS -->
+    <!-- * !SECTION SECTION SERVICES ENDS -->
 
     <!-- ! SECTION SECTION WORK STARTS    -->
     <section class="section-work">
@@ -198,40 +203,52 @@
         <div class="section-work__body-container">
           <div class="row">
             <div class="col-md-6">
-              <div class="section-work__img-container mb-5">
-                <img
-                  src="images/portfolio-1.jpg"
-                  alt="portfolio-1"
-                  class="d-block img-fluid w-100"
-                />
-              </div>
+              <a href="#" class="section-work__img-link">
+                <div class="section-work__img-container mb-5">
+                  <img
+                    src="images/portfolio-1.jpg"
+                    alt="portfolio-1"
+                    class="d-block img-fluid w-100 img-overlay"
+                  />
+                  <div class="section-work__inner-container"></div>
+                </div>
+              </a>
             </div>
             <div class="col-md-6">
-              <div class="section-work__img-container">
-                <img
-                  src="images/portfolio-2.jpg"
-                  alt="portfolio-2"
-                  class="d-block img-fluid w-100"
-                />
-              </div>
+              <a href="#" class="section-work__img-link">
+                <div class="section-work__img-container mb-5">
+                  <img
+                    src="images/portfolio-2.jpg"
+                    alt="portfolio-2"
+                    class="d-block img-fluid w-100 img-overlay"
+                  />
+                  <div class="section-work__inner-container"></div>
+                </div>
+              </a>
             </div>
             <div class="col-md-6">
-              <div class="section-work__img-container">
-                <img
-                  src="images/portfolio-3.jpg"
-                  alt="portfolio-3"
-                  class="d-block img-fluid w-100"
-                />
-              </div>
+              <a href="#" class="section-work__img-link">
+                <div class="section-work__img-container mb-5">
+                  <img
+                    src="images/portfolio-3.jpg"
+                    alt="portfolio-3"
+                    class="d-block img-fluid w-100 img-overlay"
+                  />
+                  <div class="section-work__inner-container"></div>
+                </div>
+              </a>
             </div>
             <div class="col-md-6">
-              <div class="section-work__img-container">
-                <img
-                  src="images/portfolio-4.jpg"
-                  alt="portfolio-4"
-                  class="d-block img-fluid w-100"
-                />
-              </div>
+              <a href="#" class="section-work__img-link">
+                <div class="section-work__img-container mb-5">
+                  <img
+                    src="images/portfolio-4.jpg"
+                    alt="portfolio-4"
+                    class="d-block img-fluid w-100 img-overlay"
+                  />
+                  <div class="section-work__inner-container"></div>
+                </div>
+              </a>
             </div>
             <div class="col-12">
               <div class="section-work__button-container text-center">
@@ -422,11 +439,11 @@
               </div>
               <div class="section-contact__link-container">
                 <div class="section-contact__email-container">
-                  <i class="section-contact__icon-item flaticon-visibility"></i>
+                  <i class="section-contact__icon-item fa fa-envelope-o"></i>
                   hello@w3template.com
                 </div>
                 <div class="section-contact__number-container">
-                  <i class="section-contact__icon-item flaticon-visibility"></i>
+                  <i class="section-contact__icon-item fa fa-mobile"></i>
                   123 456 789
                 </div>
               </div>
@@ -438,7 +455,7 @@
     <!-- * !SECTION SECTION CONTACT US ENDS -->
 
     <!-- ! SECTION SECTION FOOTER STARTS -->
-    <section class="section-footer">
+    <footer class="section-footer">
       <div class="container">
         <div class="row text-center">
           <div class="col-md-4">
@@ -448,9 +465,23 @@
           </div>
           <div class="col-md-4">
             <div class="section-footer__icon-container">
-              <i class="custom-icon flaticon-facebook"></i>
-              <i class="custom-icon flaticon-twitter"></i>
-              <i class="custom-icon flaticon-linkedin"></i>
+              <ul class="list-unstyled">
+                <li class="list-items">
+                  <a href="#" class="list-links"
+                    ><i class="custom-icon fa fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="list-items">
+                  <a href="#" class="list-links"
+                    ><i class="custom-icon fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li class="list-items">
+                  <a href="#" class="list-links"
+                    ><i class="custom-icon fa fa-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
             </div>
           </div>
           <div class="col-md-4">
@@ -464,7 +495,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </footer>
     <!-- * !SECTION SECTION FOOTER ENDS -->
 
     <script src="js/jquery-3.5.1.min.js"></script>
