@@ -39,6 +39,11 @@ body {
   text-transform: capitalize;
 }
 .text-lvl-senary {
+  color: var(--main-color);
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: capitalize;
 }
 .para {
   font-size: 15px;
@@ -226,28 +231,80 @@ body {
 .section-about {
   padding: 30px 0;
 }
-
-
 .section-about__total-number {
   font-size: 50px;
   font-weight: 200;
   color: var(--main-color);
 }
-
-
-
-
-
-
-
-
-
 /* *--------------------- SECTION SECTION ABOUT US ENDS -------------------- */
 
 
+/* !-------------------- SECTION SECTION CONTACT US STARTS ------------------- */
+.section-contact {
+  background: var(--secondary-color);
+  padding: 20px 0;
+}
+.section-contact__body-container {
+  padding-top: 100px;
+}
+.form--custom {
+  background: none;
+  border: none;
+  border-bottom: 2px solid var(--main-color);
+  border-radius: 0;
+  font-family: "Work Sans", sans-serif ;
+  font-size: 14px;
+}
+.form--custom:hover {
+  border-bottom: 2px solid #000000;
+}
+}
+.form--custom:active {
+  border-bottom: 2px solid #000000;
+}
+.text-area-custom {
+  padding-left: 12px;
+}
+.contact-para-custom {
+  font-size: 16px;
+  font-weight: 500;
+}
+.section-contact__link-container,
+.section-contact__number-container {
+  font-size: 14px;
+}
+.section-contact__icon-item::before {
+  color: var(--main-color);
+  margin-left: 0px;
+  margin-top: 0px;
+}
+/* *-------------------- SECTION SECTION CONTACT US ENDS ------------------- */
 
 
 
+/* !---------------------- SECTION SECTION FOOTER STARTS --------------------- */
+.section-footer {
+  padding: 30px 0;;
+}
+.custom-icon::before {
+  background: #000000;
+  color: #FFFFFF;
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 15px;
+  margin-left: 0;
+}
+.custom-icon::before:hover {
+  background: var(--main-color);
+  color: #FFFFFF;
+  border-radius: 50%;
+  font-size: 15px;
+  padding: 15px;
+  margin-left: 0;
+}
+
+
+/* *---------------------- SECTION SECTION FOOTER ENDS --------------------- */
 
 
 
