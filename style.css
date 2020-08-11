@@ -9,6 +9,7 @@ body {
   --main-color: #eb233c;
   --secondary-color: #faf4fa;
   --tertiary-color: #ffffff;
+  --quaternary-color: #F8F8F8;
   --secondary-font: "Oleo Script Swash Caps", sans-serif;
 }
 /* *------------------------------- !SECTION CSS VARIABLES ENDS---------------------------- */
@@ -260,8 +261,9 @@ body {
 
 /* !-------------------- SECTION SECTION CONTACT US STARTS ------------------- */
 .section-contact {
-  background: var(--secondary-color);
-  padding: 20px 0;
+  background: var(--quaternary-color);
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 .section-contact__body-container {
   padding-top: 100px;
@@ -310,8 +312,23 @@ body {
 }
 .list-items {
   display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 20px;
+  background: #222222;
+  margin-right: 8px;
 }
-.custom-icon::before {
+.list-items:hover {
+  background: var(--main-color);
+  color: #FFFFFF;
+}
+.list-items .custom-icon {
+  color: #FFFFFF;
+  line-height: 40px;
+}
+ /* ! Another Way of Making Circular Icons */
+/* .custom-icon::before {
   background: #222222;
   color: #FFFFFF;
   border-radius: 50%;
@@ -322,8 +339,7 @@ body {
 }
 .list-links:hover .custom-icon::before {
   background: var(--main-color);
-  color: #FFFFFF;
-
+  color: #FFFFFF; */
 
 /* *---------------------- SECTION SECTION FOOTER ENDS --------------------- */
 
